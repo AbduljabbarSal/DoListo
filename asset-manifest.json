@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DoListo/static/css/main.74c5cac2.css",
-    "main.js": "/DoListo/static/js/main.9e8dc20f.js",
+    "main.js": "/DoListo/static/js/main.29341e17.js",
     "static/media/pom.png": "/DoListo/static/media/pom.086536bfed1869cddbcd.png",
     "static/media/notification-sound.mp3": "/DoListo/static/media/notification-sound.3e0e80670bfd46226651.mp3",
     "index.html": "/DoListo/index.html",
     "main.74c5cac2.css.map": "/DoListo/static/css/main.74c5cac2.css.map",
-    "main.9e8dc20f.js.map": "/DoListo/static/js/main.9e8dc20f.js.map"
+    "main.29341e17.js.map": "/DoListo/static/js/main.29341e17.js.map"
   },
   "entrypoints": [
     "static/css/main.74c5cac2.css",
-    "static/js/main.9e8dc20f.js"
+    "static/js/main.29341e17.js"
   ]
 }
