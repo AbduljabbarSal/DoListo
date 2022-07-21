@@ -52,7 +52,7 @@ const Pomodoro = () => {
        <img className='photo' alt="tomato photo resembling pomodoro" src={MyImage}></img>
        <img className='photo' alt="tomato photo resembling pomodoro" src={MyImage}></img>
        <img className='photo' alt="tomato photo resembling pomodoro" src={MyImage}></img>
-        <p className='pomText'>Elapsed time: {time}</p>
+        <p className='pomText'>Elapsed time: {time} seconds</p>
         {status === 'RUNNING' && <p>Running...</p>}
         
       </div>

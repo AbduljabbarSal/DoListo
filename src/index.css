@@ -38,10 +38,29 @@
   margin-bottom: 80px;
   font-size: 2em;
 }
+.todoText{
+  color:rgb(150, 25, 96);
+  margin-left: 40%;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+.line{
+  margin-bottom: 30px;
+  height: 4px;
+  background-color:f092b8;
+
+}
 .homeText2{
   color:rgb(150, 25, 96);
   margin-left: 53% ;
   font-size: 2em;
+}
+
+.todoList{
+
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 20%;
 }
 
 ul {

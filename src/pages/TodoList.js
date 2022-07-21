@@ -1,19 +1,22 @@
 import React from 'react';
+import { Todo } from "react-todo-component";
 
 const TodoList = () => {
   return (
+    <>
+      <h1 className='home'>TodoList</h1>
+      <p className='todoText'>
+            ⚪ Add Any ToDoList Items Below!
+      </p>
+      <hr className='line'></hr>
+
       <div className='todoList'>
 
-        <h1 className='home'>TodoList</h1>
-        <ul>
-          <li>
-            <p className='homeText'>
-            ⚪ ToDoList feature in the works
-            </p>
-          </li>
+        <Todo></Todo>
 
-        </ul>
       </div>
+    </>
+
     );
   }
    
