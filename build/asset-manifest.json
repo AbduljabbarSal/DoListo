@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DoListo/static/css/main.7e234d30.css",
+    "main.js": "/DoListo/static/js/main.5f37d2ab.js",
+    "static/media/pom.png": "/DoListo/static/media/pom.086536bfed1869cddbcd.png",
+    "static/media/notification-sound.mp3": "/DoListo/static/media/notification-sound.3e0e80670bfd46226651.mp3",
+    "index.html": "/DoListo/index.html",
+    "main.7e234d30.css.map": "/DoListo/static/css/main.7e234d30.css.map",
+    "main.5f37d2ab.js.map": "/DoListo/static/js/main.5f37d2ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e234d30.css",
+    "static/js/main.5f37d2ab.js"
+  ]
+}
