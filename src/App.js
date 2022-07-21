@@ -8,7 +8,7 @@ import Support from './pages/Support';
 import About from './pages/About';
 
 function App(props,state) {
-  let Component = About;
+  let Component;
   switch(window.location.pathname){
     
     case "/":
