@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
 import Navbar from './Navbar';
-import Home from './pages/TodoList';
-import TodoList from './pages/TodoList';
-import Pomodoro from './pages/Pomodoro';
-import Support from './pages/Support';
-import About from './pages/About';
+import Home from './TodoList';
+import TodoList from './TodoList';
+import Pomodoro from './Pomodoro';
+import Support from './Support';
+import About from './About';
 
 function App(props,state) {
   let Component;
