@@ -14,7 +14,7 @@ const Pomodoro = () => {
 
   const { time, start, pause, reset, status } = useTimer({
     
-    initialTime: 1500,
+    initialTime: 5,
     endTime: 0,
     timerType: 'DECREMENTAL',
     onTimeOver: () => {
