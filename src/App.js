@@ -17,6 +17,7 @@ function App() {
       
         <Routes>
         <Route path="/" element={<Navigate replace to="/About" />} />
+        <Route path="/DoListo" element={<Navigate replace to="/About" />} />
         <Route path = "/About" element={<About></About>}></Route>
         <Route path = "/TodoList" element={<TodoList></TodoList>}></Route>
         <Route path = "/Pomodoro" element={<Pomodoro></Pomodoro>}></Route>
