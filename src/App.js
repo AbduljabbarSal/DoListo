@@ -5,29 +5,26 @@ import TodoList from './TodoList';
 import Pomodoro from './Pomodoro';
 import Support from './Support';
 import About from './About';
-import { Route, Routes, Link } from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 
 function App() {
   const path = process.env.REACT_APP_FOR_PATH;
 
   return (
-    <div className="App">
-      <div>
-        <Navbar/>
+    <div>
+    <HashRouter basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <Navbar></Navbar>
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/TodoList" component={TodoList} />
+        <Route exact path="/Support" component={Support} />
+        <Route exact path="/Pomodoro" component={Pomodoro} />
+      </Switch>
       </div>
-      <div>
-        <Routes>
-          <Route path={process.env.REACT_APP_FOR_PATH + '/'} element={<About/>} />
-          <Route path= {process.env.REACT_APP_FOR_PATH + '/DoListo'} element={<About/>} />
-          <Route path= {process.env.REACT_APP_FOR_PATH + '/About' }element={<About/>} />
-          <Route path= {process.env.REACT_APP_FOR_PATH + '/Pomodoro'} element={<Pomodoro/>} />
-          <Route path= {process.env.REACT_APP_FOR_PATH + '/TodoList'} element={<TodoList/>} />
-          <Route path= {process.env.REACT_APP_FOR_PATH + '/Support' }element={<Support/>} />
-
-        </Routes>
-      </div>
-          
-      </div>
+    </HashRouter>
+  </div>
   );
 }
 
