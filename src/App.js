@@ -5,37 +5,26 @@ import TodoList from './TodoList';
 import Pomodoro from './Pomodoro';
 import Support from './Support';
 import About from './About';
+import { Route, Routes, Link } from "react-router-dom";
 
-function App(props,state) {
-  let Component;
-  switch(window.location.pathname){
-    
-    case "/":
-      Component = About
-      break
-    case "/DoListo":
-        Component = About
-      break
-    case "/TodoList":
-      Component = TodoList
-      break
-    case "/Pomodoro":
-      Component = Pomodoro
-      break
-    case "/Support":
-      Component = Support
-      break
-    case "/About":
-      Component = About
-      break  
-  }
+function App() {
   
   return (
     <div className="App">
+      <div>
+        <Navbar/>
+      </div>
+      <div>
+        <Routes>
+          <Route path='/About' element={<About/>} />
+          <Route path='/Pomodoro' element={<Pomodoro/>} />
+          <Route path='/TodoList' element={<TodoList/>} />
+          <Route path='/Support' element={<Support/>} />
 
-      <Navbar/>
-      <Component></Component>
-    </div>
+        </Routes>
+      </div>
+          
+      </div>
   );
 }
 
