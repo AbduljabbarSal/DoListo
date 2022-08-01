@@ -8,7 +8,8 @@ import About from './About';
 import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
-  
+  const path = process.env.REACT_APP_FOR_PATH;
+
   return (
     <div className="App">
       <div>
@@ -16,12 +17,12 @@ function App() {
       </div>
       <div>
         <Routes>
-          <Route path='/' element={<About/>} />
-          <Route path='/DoListo' element={<About/>} />
-          <Route path='/About' element={<About/>} />
-          <Route path='/Pomodoro' element={<Pomodoro/>} />
-          <Route path='/TodoList' element={<TodoList/>} />
-          <Route path='/Support' element={<Support/>} />
+          <Route path={process.env.REACT_APP_FOR_PATH + '/'} element={<About/>} />
+          <Route path= {process.env.REACT_APP_FOR_PATH + '/DoListo'} element={<About/>} />
+          <Route path= {process.env.REACT_APP_FOR_PATH + '/About' }element={<About/>} />
+          <Route path= {process.env.REACT_APP_FOR_PATH + '/Pomodoro'} element={<Pomodoro/>} />
+          <Route path= {process.env.REACT_APP_FOR_PATH + '/TodoList'} element={<TodoList/>} />
+          <Route path= {process.env.REACT_APP_FOR_PATH + '/Support' }element={<Support/>} />
 
         </Routes>
       </div>
