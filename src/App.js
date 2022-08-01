@@ -5,27 +5,37 @@ import TodoList from './TodoList';
 import Pomodoro from './Pomodoro';
 import Support from './Support';
 import About from './About';
-import {Route, Routes, Navigate} from 'react-router-dom';
-//make all routes start with /DoListo . not gon
-function App() {
+
+function App(props,state) {
+  let Component;
+  switch(window.location.pathname){
+    
+    case "/":
+      Component = About
+      break
+    case "/DoListo":
+        Component = About
+      break
+    case "/TodoList":
+      Component = TodoList
+      break
+    case "/Pomodoro":
+      Component = Pomodoro
+      break
+    case "/Support":
+      Component = Support
+      break
+    case "/About":
+      Component = About
+      break  
+  }
   
   return (
-    <>
+    <div className="App">
 
-      <div className="App">
       <Navbar/>
-      
-        <Routes>
-        <Route path="/" element={<Navigate replace to="/About" />} />
-        <Route path="/DoListo" element={<Navigate replace to="/About" />} />
-        <Route path = "/About" element={<About></About>}></Route>
-        <Route path = "/TodoList" element={<TodoList></TodoList>}></Route>
-        <Route path = "/Pomodoro" element={<Pomodoro></Pomodoro>}></Route>
-        <Route path = "/Support" element={<Support></Support>}></Route>
-        </Routes>
-
-      </div>
-    </>
+      <Component></Component>
+    </div>
   );
 }
 
