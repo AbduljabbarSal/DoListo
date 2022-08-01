@@ -12,15 +12,15 @@ function App() {
 
   return (
     <div>
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar></Navbar>
       <Switch>
-        <Route exact path="/" component={About} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/TodoList" component={TodoList} />
-        <Route exact path="/Support" component={Support} />
-        <Route exact path="/Pomodoro" component={Pomodoro} />
+        <Route path="/" component={About} />
+        <Route path="/About" component={About} />
+        <Route path="/TodoList" component={TodoList} />
+        <Route path="/Support" component={Support} />
+        <Route path="/Pomodoro" component={Pomodoro} />
       </Switch>
       </div>
     </HashRouter>
